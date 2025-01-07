@@ -1,5 +1,6 @@
 package site.mufen.domain.activity.service;
 
+import org.springframework.stereotype.Service;
 import site.mufen.domain.activity.model.entity.MarketProductEntity;
 import site.mufen.domain.activity.model.entity.TrialBalanceEntity;
 import site.mufen.domain.activity.service.trial.factory.DefaultActivityStrategyFactory;
@@ -12,7 +13,8 @@ import javax.annotation.Resource;
  * @Description
  * @create 2025/1/7 19:08
  */
-public class IndexGroupBuyMarketService implements  IIndexGroupBuyMarketService{
+@Service
+public class IndexGroupBuyMarketService implements IIndexGroupBuyMarketService {
 
     @Resource
     private DefaultActivityStrategyFactory defaultActivityStrategyFactory;

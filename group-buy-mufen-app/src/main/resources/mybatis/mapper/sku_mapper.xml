@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="site.mufen.infrastructure.dao.ISkuDao">
+
+    <resultMap id="dataMap" type="site.mufen.infrastructure.dao.po.Sku">
+        <id column="id" property="id"/>
+        <result column="source" property="source"/>
+        <result column="channel" property="channel"/>
+        <result column="goodsId" property="goodsId"/>
+        <result column="goodsName" property="goodsName"/>
+        <result column="originalPrice" property="originalPrice"/>
+        <result column="create_time" property="createTime"/>
+        <result column="update_time" property="updateTime"/>
+    </resultMap>
+    <select id="querySkuByGoodsId" resultType="site.mufen.infrastructure.dao.po.Sku">
+        select source, channel, goods_id, goods_name, original_price
+        from sku where goods_id = #{goodsId}
+    </select>
+
+</mapper>

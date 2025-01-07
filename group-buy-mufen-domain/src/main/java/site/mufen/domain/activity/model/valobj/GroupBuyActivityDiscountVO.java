@@ -1,24 +1,19 @@
-package site.mufen.infrastructure.dao.po;
+package site.mufen.domain.activity.model.valobj;
 
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 import java.time.LocalDateTime;
 
 /**
- * 折扣活动
+ * @author mufen
+ * @Description
+ * @create 2025/1/7 21:52
  */
 @Data
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-public class GroupBuyActivity {
-    /**
-     * 自增
-     */
-    private Long id;
+public class GroupBuyActivityDiscountVO {
     /**
      * 活动ID
      */
@@ -40,9 +35,9 @@ public class GroupBuyActivity {
      */
     private String goodsId;
     /**
-     * 折扣ID
+     * 折扣配置
      */
-    private String discountId;
+    private GroupBuyDiscount groupBuyDiscount;
     /**
      * 拼团方式（0自动成团、1达成目标拼团）
      */
@@ -79,10 +74,39 @@ public class GroupBuyActivity {
      * 人群标签规则范围（多选；1可见限制、2参与限制）
      */
     private String tagScope;
-    /**
-     * 创建时间
-     */
-    private LocalDateTime createTime;
-    /** 更新时间 */
-    private LocalDateTime updateTime;
+
+    @Getter
+    @Builder
+    @AllArgsConstructor
+    @NoArgsConstructor
+    public static class GroupBuyDiscount {
+        /**
+         * 折扣ID
+         */
+        private Integer discountId;
+        /**
+         * 折扣标题
+         */
+        private String discountName;
+        /**
+         * 折扣描述
+         */
+        private String discountDesc;
+        /**
+         * 折扣类型（0:base、1:tag）
+         */
+        private Byte discountType;
+        /**
+         * 营销优惠计划（ZJ:直减、MJ:满减、N元购）
+         */
+        private String marketPlan;
+        /**
+         * 营销优惠表达式
+         */
+        private String marketExpr;
+        /**
+         * 人群标签，特定优惠限定
+         */
+        private String tagId;
+    }
 }
