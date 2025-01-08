@@ -26,8 +26,6 @@ public class MJCalculateService extends AbstractDiscountCalculateService {
         BigDecimal discount = new BigDecimal(split[1]); // 减少的价格
         if (originalPrice.compareTo(minPrice) < 0) return originalPrice;
         BigDecimal discountPrice = originalPrice.subtract(discount);
-        if (discountPrice.compareTo(new BigDecimal("0.01")) < 0) return new BigDecimal("0.01");
-        discountPrice = discountPrice.setScale(2, RoundingMode.HALF_UP);
-        return discountPrice;
+        return validDiscountPrice(discountPrice);
     }
 }

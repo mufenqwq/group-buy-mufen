@@ -21,8 +21,6 @@ public class ZJCalculateService extends AbstractDiscountCalculateService {
         log.info("优惠策略折扣计算: {}", groupBuyDiscount.getDiscountType().getInfo());
         String marketExpr = groupBuyDiscount.getMarketExpr();
         BigDecimal discountPrice = originalPrice.subtract(new BigDecimal(marketExpr));
-        discountPrice = discountPrice.setScale(2, RoundingMode.HALF_UP);
-        if (discountPrice.compareTo(new BigDecimal("0.01")) < 0) return new BigDecimal("0.01");
-        return discountPrice;
+        return validDiscountPrice(discountPrice);
     }
 }

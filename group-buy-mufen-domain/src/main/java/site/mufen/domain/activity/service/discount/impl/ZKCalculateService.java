@@ -21,10 +21,7 @@ public class ZKCalculateService extends AbstractDiscountCalculateService {
     public BigDecimal doCalculate(BigDecimal originalPrice, GroupBuyActivityDiscountVO.GroupBuyDiscount groupBuyDiscount) {
         log.info("优惠策略折扣计算: {}", groupBuyDiscount.getDiscountType().getInfo());
         String marketExpr = groupBuyDiscount.getMarketExpr();
-        if (originalPrice.compareTo(new BigDecimal("0.01")) < 0) return new BigDecimal("0.01");
         BigDecimal discountPrice = originalPrice.multiply(new BigDecimal(marketExpr));
-        discountPrice = discountPrice.setScale(2, RoundingMode.HALF_UP);
-        if (originalPrice.compareTo(new BigDecimal("0.01")) < 0) return new BigDecimal("0.01");
-        return discountPrice;
+        return validDiscountPrice(discountPrice);
     }
 }

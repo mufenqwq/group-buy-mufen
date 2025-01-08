@@ -20,6 +20,6 @@ public class NCalculateService extends AbstractDiscountCalculateService {
     public BigDecimal doCalculate(BigDecimal originalPrice, GroupBuyActivityDiscountVO.GroupBuyDiscount groupBuyDiscount) {
         log.info("优惠策略折扣计算: {}", groupBuyDiscount.getDiscountType().getInfo());
         String marketExpr = groupBuyDiscount.getMarketExpr();
-        return new BigDecimal(marketExpr);
+        return validDiscountPrice(new BigDecimal(marketExpr));
     }
 }
