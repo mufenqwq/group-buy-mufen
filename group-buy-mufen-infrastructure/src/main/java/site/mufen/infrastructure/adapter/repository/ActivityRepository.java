@@ -2,6 +2,7 @@ package site.mufen.infrastructure.adapter.repository;
 
 import org.springframework.stereotype.Repository;
 import site.mufen.domain.activity.adapter.repository.IActivityRepository;
+import site.mufen.domain.activity.model.valobj.DiscountTypeEnum;
 import site.mufen.domain.activity.model.valobj.GroupBuyActivityDiscountVO;
 import site.mufen.domain.activity.model.valobj.SkuVO;
 import site.mufen.infrastructure.dao.IGroupBuyActivityDao;
@@ -39,7 +40,7 @@ public class ActivityRepository implements IActivityRepository {
         GroupBuyActivityDiscountVO.GroupBuyDiscount groupBuyDiscount = GroupBuyActivityDiscountVO.GroupBuyDiscount.builder()
             .discountName(groupBuyDiscountRes.getDiscountName())
             .discountDesc(groupBuyDiscountRes.getDiscountDesc())
-            .discountType(groupBuyDiscountRes.getDiscountType())
+            .discountType(DiscountTypeEnum.get(Integer.valueOf(groupBuyDiscountRes.getDiscountType())))
             .marketPlan(groupBuyDiscountRes.getMarketPlan())
             .marketExpr(groupBuyDiscountRes.getMarketExpr())
             .tagId(groupBuyDiscountRes.getTagId()).build();

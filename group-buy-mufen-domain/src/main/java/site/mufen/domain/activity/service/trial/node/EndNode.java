@@ -29,11 +29,13 @@ public class EndNode extends AbstractGroupBuyMarketSupport<MarketProductEntity, 
         // 商品信息
         SkuVO skuVO = dynamicCtx.getSkuVO();
 
+        BigDecimal deductionPrice = dynamicCtx.getDeductionPrice();
+
         return TrialBalanceEntity.builder()
             .goodsId(skuVO.getGoodsId())
             .goodsName(skuVO.getGoodsName())
             .originalPrice(skuVO.getOriginalPrice())
-            .deductionPrice(new BigDecimal("0.0"))
+            .deductionPrice(deductionPrice)
             .targetCount(groupBuyActivityDiscountVO.getTarget())
             .startTime(groupBuyActivityDiscountVO.getStartTime())
             .endTime(groupBuyActivityDiscountVO.getEndTime())

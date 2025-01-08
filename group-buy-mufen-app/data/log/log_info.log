@@ -116,3 +116,131 @@ Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No q
 25-01-08.00:57:55.745 [main            ] INFO  IIndexGroupBuyMarketServiceTest - 响应参数: {"deductionPrice":0.0,"endTime":1733537980000,"goodsId":"9890001","goodsName":"《手写MyBatis：渐进式源码实践》","isEnable":false,"isVisible":false,"originalPrice":100.00,"startTime":1733537980000,"targetCount":1}
 25-01-08.00:57:55.757 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
 25-01-08.00:57:55.761 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+25-01-08.12:43:57.680 [main            ] INFO  IIndexGroupBuyMarketServiceTest - Starting IIndexGroupBuyMarketServiceTest using Java 1.8.0_421 on DESKTOP-I26V24T with PID 3732 (started by mufen in D:\project4xfg\group-buy-mufen\group-buy-mufen-app)
+25-01-08.12:43:57.682 [main            ] INFO  IIndexGroupBuyMarketServiceTest - The following 1 profile is active: "dev"
+25-01-08.12:43:59.830 [main            ] INFO  IIndexGroupBuyMarketServiceTest - Started IIndexGroupBuyMarketServiceTest in 2.545 seconds (JVM running for 3.55)
+25-01-08.12:44:00.231 [main            ] INFO  RootNode               - 拼团商品查询试算服务-RootNode userId: mufenqwq, requestParam: {"channel":"c01","goodsId":"9890001","source":"s01","userId":"mufenqwq"}
+25-01-08.12:44:00.235 [main            ] INFO  SwitchNode             - 拼团商品查询试算服务-SwitchNode userId:mufenqwq requestParameter:{"channel":"c01","goodsId":"9890001","source":"s01","userId":"mufenqwq"}
+25-01-08.12:44:00.265 [pool-2-thread-2 ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+25-01-08.12:44:00.855 [pool-2-thread-2 ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+25-01-08.12:44:00.902 [main            ] INFO  MarketNode             - 拼团商品查询试算服务-MarketNode userId:mufenqwq 异步线程加载数据「GroupBuyActivityDiscountVO、SkuVO」完成
+25-01-08.12:44:00.902 [main            ] INFO  MarketNode             - 拼团商品查询试算服务-Market userId: mufenqwq, requestParam: {"channel":"c01","goodsId":"9890001","source":"s01","userId":"mufenqwq"}
+25-01-08.12:44:00.902 [main            ] INFO  EndNode                - 拼团商品查询试算服务-EndNode userId: mufenqwq, requestParam: {"channel":"c01","goodsId":"9890001","source":"s01","userId":"mufenqwq"}
+25-01-08.12:44:00.903 [main            ] INFO  IIndexGroupBuyMarketServiceTest - 请求参数: {"channel":"c01","goodsId":"9890001","source":"s01","userId":"mufenqwq"}
+25-01-08.12:44:00.910 [main            ] INFO  IIndexGroupBuyMarketServiceTest - 响应参数: {"deductionPrice":80.00,"endTime":1733537980000,"goodsId":"9890001","goodsName":"《手写MyBatis：渐进式源码实践》","isEnable":false,"isVisible":false,"originalPrice":100.00,"startTime":1733537980000,"targetCount":1}
+25-01-08.12:44:00.920 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+25-01-08.12:44:00.924 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+25-01-08.12:44:45.548 [main            ] INFO  IIndexGroupBuyMarketServiceTest - Starting IIndexGroupBuyMarketServiceTest using Java 1.8.0_421 on DESKTOP-I26V24T with PID 17660 (started by mufen in D:\project4xfg\group-buy-mufen\group-buy-mufen-app)
+25-01-08.12:44:45.549 [main            ] INFO  IIndexGroupBuyMarketServiceTest - The following 1 profile is active: "dev"
+25-01-08.12:44:47.368 [main            ] INFO  IIndexGroupBuyMarketServiceTest - Started IIndexGroupBuyMarketServiceTest in 2.156 seconds (JVM running for 2.91)
+25-01-08.12:44:47.701 [main            ] INFO  RootNode               - 拼团商品查询试算服务-RootNode userId: mufenqwq, requestParam: {"channel":"c01","goodsId":"9890001","source":"s01","userId":"mufenqwq"}
+25-01-08.12:44:47.706 [main            ] INFO  SwitchNode             - 拼团商品查询试算服务-SwitchNode userId:mufenqwq requestParameter:{"channel":"c01","goodsId":"9890001","source":"s01","userId":"mufenqwq"}
+25-01-08.12:44:47.727 [pool-2-thread-1 ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+25-01-08.12:44:48.334 [pool-2-thread-1 ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+25-01-08.12:44:48.377 [main            ] INFO  MarketNode             - 拼团商品查询试算服务-MarketNode userId:mufenqwq 异步线程加载数据「GroupBuyActivityDiscountVO、SkuVO」完成
+25-01-08.12:44:48.377 [main            ] INFO  MarketNode             - 拼团商品查询试算服务-Market userId: mufenqwq, requestParam: {"channel":"c01","goodsId":"9890001","source":"s01","userId":"mufenqwq"}
+25-01-08.12:44:48.377 [main            ] INFO  EndNode                - 拼团商品查询试算服务-EndNode userId: mufenqwq, requestParam: {"channel":"c01","goodsId":"9890001","source":"s01","userId":"mufenqwq"}
+25-01-08.12:44:48.378 [main            ] INFO  IIndexGroupBuyMarketServiceTest - 请求参数: {"channel":"c01","goodsId":"9890001","source":"s01","userId":"mufenqwq"}
+25-01-08.12:44:48.385 [main            ] INFO  IIndexGroupBuyMarketServiceTest - 响应参数: {"deductionPrice":0.01,"endTime":1733537980000,"goodsId":"9890001","goodsName":"《手写MyBatis：渐进式源码实践》","isEnable":false,"isVisible":false,"originalPrice":100.00,"startTime":1733537980000,"targetCount":1}
+25-01-08.12:44:48.393 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+25-01-08.12:44:48.395 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+25-01-08.12:45:53.265 [main            ] INFO  IIndexGroupBuyMarketServiceTest - Starting IIndexGroupBuyMarketServiceTest using Java 1.8.0_421 on DESKTOP-I26V24T with PID 12384 (started by mufen in D:\project4xfg\group-buy-mufen\group-buy-mufen-app)
+25-01-08.12:45:53.266 [main            ] INFO  IIndexGroupBuyMarketServiceTest - The following 1 profile is active: "dev"
+25-01-08.12:45:55.084 [main            ] INFO  IIndexGroupBuyMarketServiceTest - Started IIndexGroupBuyMarketServiceTest in 2.156 seconds (JVM running for 2.863)
+25-01-08.12:45:55.370 [main            ] INFO  RootNode               - 拼团商品查询试算服务-RootNode userId: mufenqwq, requestParam: {"channel":"c01","goodsId":"9890001","source":"s01","userId":"mufenqwq"}
+25-01-08.12:45:55.373 [main            ] INFO  SwitchNode             - 拼团商品查询试算服务-SwitchNode userId:mufenqwq requestParameter:{"channel":"c01","goodsId":"9890001","source":"s01","userId":"mufenqwq"}
+25-01-08.12:45:55.394 [pool-2-thread-2 ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+25-01-08.12:45:56.027 [pool-2-thread-2 ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+25-01-08.12:45:56.079 [main            ] INFO  MarketNode             - 拼团商品查询试算服务-MarketNode userId:mufenqwq 异步线程加载数据「GroupBuyActivityDiscountVO、SkuVO」完成
+25-01-08.12:45:56.080 [main            ] INFO  MarketNode             - 拼团商品查询试算服务-Market userId: mufenqwq, requestParam: {"channel":"c01","goodsId":"9890001","source":"s01","userId":"mufenqwq"}
+25-01-08.12:45:56.080 [main            ] INFO  EndNode                - 拼团商品查询试算服务-EndNode userId: mufenqwq, requestParam: {"channel":"c01","goodsId":"9890001","source":"s01","userId":"mufenqwq"}
+25-01-08.12:45:56.081 [main            ] INFO  IIndexGroupBuyMarketServiceTest - 请求参数: {"channel":"c01","goodsId":"9890001","source":"s01","userId":"mufenqwq"}
+25-01-08.12:45:56.089 [main            ] INFO  IIndexGroupBuyMarketServiceTest - 响应参数: {"deductionPrice":10.00,"endTime":1733537980000,"goodsId":"9890001","goodsName":"《手写MyBatis：渐进式源码实践》","isEnable":false,"isVisible":false,"originalPrice":100.00,"startTime":1733537980000,"targetCount":1}
+25-01-08.12:45:56.097 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+25-01-08.12:45:56.100 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+25-01-08.12:46:22.211 [main            ] INFO  IIndexGroupBuyMarketServiceTest - Starting IIndexGroupBuyMarketServiceTest using Java 1.8.0_421 on DESKTOP-I26V24T with PID 3140 (started by mufen in D:\project4xfg\group-buy-mufen\group-buy-mufen-app)
+25-01-08.12:46:22.212 [main            ] INFO  IIndexGroupBuyMarketServiceTest - The following 1 profile is active: "dev"
+25-01-08.12:46:24.397 [main            ] INFO  IIndexGroupBuyMarketServiceTest - Started IIndexGroupBuyMarketServiceTest in 2.574 seconds (JVM running for 3.719)
+25-01-08.12:46:24.723 [main            ] INFO  RootNode               - 拼团商品查询试算服务-RootNode userId: mufenqwq, requestParam: {"channel":"c01","goodsId":"9890001","source":"s01","userId":"mufenqwq"}
+25-01-08.12:46:24.726 [main            ] INFO  SwitchNode             - 拼团商品查询试算服务-SwitchNode userId:mufenqwq requestParameter:{"channel":"c01","goodsId":"9890001","source":"s01","userId":"mufenqwq"}
+25-01-08.12:46:24.751 [pool-2-thread-1 ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+25-01-08.12:46:25.398 [pool-2-thread-1 ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+25-01-08.12:46:25.444 [main            ] INFO  MarketNode             - 拼团商品查询试算服务-MarketNode userId:mufenqwq 异步线程加载数据「GroupBuyActivityDiscountVO、SkuVO」完成
+25-01-08.12:46:25.444 [main            ] INFO  MarketNode             - 拼团商品查询试算服务-Market userId: mufenqwq, requestParam: {"channel":"c01","goodsId":"9890001","source":"s01","userId":"mufenqwq"}
+25-01-08.12:46:34.960 [main            ] INFO  EndNode                - 拼团商品查询试算服务-EndNode userId: mufenqwq, requestParam: {"channel":"c01","goodsId":"9890001","source":"s01","userId":"mufenqwq"}
+25-01-08.12:46:34.963 [main            ] INFO  IIndexGroupBuyMarketServiceTest - 请求参数: {"channel":"c01","goodsId":"9890001","source":"s01","userId":"mufenqwq"}
+25-01-08.12:46:34.973 [main            ] INFO  IIndexGroupBuyMarketServiceTest - 响应参数: {"deductionPrice":10.00,"endTime":1733537980000,"goodsId":"9890001","goodsName":"《手写MyBatis：渐进式源码实践》","isEnable":false,"isVisible":false,"originalPrice":100.00,"startTime":1733537980000,"targetCount":1}
+25-01-08.12:46:34.986 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+25-01-08.12:46:34.999 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+25-01-08.12:46:47.247 [main            ] INFO  IIndexGroupBuyMarketServiceTest - Starting IIndexGroupBuyMarketServiceTest using Java 1.8.0_421 on DESKTOP-I26V24T with PID 11628 (started by mufen in D:\project4xfg\group-buy-mufen\group-buy-mufen-app)
+25-01-08.12:46:47.248 [main            ] INFO  IIndexGroupBuyMarketServiceTest - The following 1 profile is active: "dev"
+25-01-08.12:46:49.128 [main            ] INFO  IIndexGroupBuyMarketServiceTest - Started IIndexGroupBuyMarketServiceTest in 2.211 seconds (JVM running for 3.024)
+25-01-08.12:46:49.427 [main            ] INFO  RootNode               - 拼团商品查询试算服务-RootNode userId: mufenqwq, requestParam: {"channel":"c01","goodsId":"9890001","source":"s01","userId":"mufenqwq"}
+25-01-08.12:46:49.431 [main            ] INFO  SwitchNode             - 拼团商品查询试算服务-SwitchNode userId:mufenqwq requestParameter:{"channel":"c01","goodsId":"9890001","source":"s01","userId":"mufenqwq"}
+25-01-08.12:46:49.452 [pool-2-thread-2 ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+25-01-08.12:46:50.059 [pool-2-thread-2 ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+25-01-08.12:46:50.101 [main            ] INFO  MarketNode             - 拼团商品查询试算服务-MarketNode userId:mufenqwq 异步线程加载数据「GroupBuyActivityDiscountVO、SkuVO」完成
+25-01-08.12:46:50.101 [main            ] INFO  MarketNode             - 拼团商品查询试算服务-Market userId: mufenqwq, requestParam: {"channel":"c01","goodsId":"9890001","source":"s01","userId":"mufenqwq"}
+25-01-08.12:46:50.101 [main            ] INFO  EndNode                - 拼团商品查询试算服务-EndNode userId: mufenqwq, requestParam: {"channel":"c01","goodsId":"9890001","source":"s01","userId":"mufenqwq"}
+25-01-08.12:46:50.102 [main            ] INFO  IIndexGroupBuyMarketServiceTest - 请求参数: {"channel":"c01","goodsId":"9890001","source":"s01","userId":"mufenqwq"}
+25-01-08.12:46:50.109 [main            ] INFO  IIndexGroupBuyMarketServiceTest - 响应参数: {"deductionPrice":90.00,"endTime":1733537980000,"goodsId":"9890001","goodsName":"《手写MyBatis：渐进式源码实践》","isEnable":false,"isVisible":false,"originalPrice":100.00,"startTime":1733537980000,"targetCount":1}
+25-01-08.12:46:50.119 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+25-01-08.12:46:50.122 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+25-01-08.12:47:09.140 [main            ] INFO  IIndexGroupBuyMarketServiceTest - Starting IIndexGroupBuyMarketServiceTest using Java 1.8.0_421 on DESKTOP-I26V24T with PID 21824 (started by mufen in D:\project4xfg\group-buy-mufen\group-buy-mufen-app)
+25-01-08.12:47:09.141 [main            ] INFO  IIndexGroupBuyMarketServiceTest - The following 1 profile is active: "dev"
+25-01-08.12:47:11.088 [main            ] INFO  IIndexGroupBuyMarketServiceTest - Started IIndexGroupBuyMarketServiceTest in 2.316 seconds (JVM running for 3.101)
+25-01-08.12:47:11.390 [main            ] INFO  RootNode               - 拼团商品查询试算服务-RootNode userId: mufenqwq, requestParam: {"channel":"c01","goodsId":"9890001","source":"s01","userId":"mufenqwq"}
+25-01-08.12:47:11.393 [main            ] INFO  SwitchNode             - 拼团商品查询试算服务-SwitchNode userId:mufenqwq requestParameter:{"channel":"c01","goodsId":"9890001","source":"s01","userId":"mufenqwq"}
+25-01-08.12:47:11.415 [pool-2-thread-2 ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+25-01-08.12:47:12.102 [pool-2-thread-2 ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+25-01-08.12:47:12.150 [main            ] INFO  MarketNode             - 拼团商品查询试算服务-MarketNode userId:mufenqwq 异步线程加载数据「GroupBuyActivityDiscountVO、SkuVO」完成
+25-01-08.12:47:12.150 [main            ] INFO  MarketNode             - 拼团商品查询试算服务-Market userId: mufenqwq, requestParam: {"channel":"c01","goodsId":"9890001","source":"s01","userId":"mufenqwq"}
+25-01-08.12:47:12.150 [main            ] INFO  EndNode                - 拼团商品查询试算服务-EndNode userId: mufenqwq, requestParam: {"channel":"c01","goodsId":"9890001","source":"s01","userId":"mufenqwq"}
+25-01-08.12:47:12.151 [main            ] INFO  IIndexGroupBuyMarketServiceTest - 请求参数: {"channel":"c01","goodsId":"9890001","source":"s01","userId":"mufenqwq"}
+25-01-08.12:47:12.160 [main            ] INFO  IIndexGroupBuyMarketServiceTest - 响应参数: {"deductionPrice":80.00,"endTime":1733537980000,"goodsId":"9890001","goodsName":"《手写MyBatis：渐进式源码实践》","isEnable":false,"isVisible":false,"originalPrice":100.00,"startTime":1733537980000,"targetCount":1}
+25-01-08.12:47:12.168 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+25-01-08.12:47:12.171 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+25-01-08.12:48:00.517 [main            ] INFO  IIndexGroupBuyMarketServiceTest - Starting IIndexGroupBuyMarketServiceTest using Java 1.8.0_421 on DESKTOP-I26V24T with PID 19792 (started by mufen in D:\project4xfg\group-buy-mufen\group-buy-mufen-app)
+25-01-08.12:48:00.518 [main            ] INFO  IIndexGroupBuyMarketServiceTest - The following 1 profile is active: "dev"
+25-01-08.12:48:02.310 [main            ] INFO  IIndexGroupBuyMarketServiceTest - Started IIndexGroupBuyMarketServiceTest in 2.122 seconds (JVM running for 2.917)
+25-01-08.12:48:02.603 [main            ] INFO  RootNode               - 拼团商品查询试算服务-RootNode userId: mufenqwq, requestParam: {"channel":"c01","goodsId":"9890001","source":"s01","userId":"mufenqwq"}
+25-01-08.12:48:02.607 [main            ] INFO  SwitchNode             - 拼团商品查询试算服务-SwitchNode userId:mufenqwq requestParameter:{"channel":"c01","goodsId":"9890001","source":"s01","userId":"mufenqwq"}
+25-01-08.12:48:02.629 [pool-2-thread-2 ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+25-01-08.12:48:03.259 [pool-2-thread-2 ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+25-01-08.12:48:03.308 [main            ] INFO  MarketNode             - 拼团商品查询试算服务-MarketNode userId:mufenqwq 异步线程加载数据「GroupBuyActivityDiscountVO、SkuVO」完成
+25-01-08.12:48:03.309 [main            ] INFO  MarketNode             - 拼团商品查询试算服务-Market userId: mufenqwq, requestParam: {"channel":"c01","goodsId":"9890001","source":"s01","userId":"mufenqwq"}
+25-01-08.12:48:03.309 [main            ] INFO  EndNode                - 拼团商品查询试算服务-EndNode userId: mufenqwq, requestParam: {"channel":"c01","goodsId":"9890001","source":"s01","userId":"mufenqwq"}
+25-01-08.12:48:03.310 [main            ] INFO  IIndexGroupBuyMarketServiceTest - 请求参数: {"channel":"c01","goodsId":"9890001","source":"s01","userId":"mufenqwq"}
+25-01-08.12:48:03.318 [main            ] INFO  IIndexGroupBuyMarketServiceTest - 响应参数: {"deductionPrice":1.99,"endTime":1733537980000,"goodsId":"9890001","goodsName":"《手写MyBatis：渐进式源码实践》","isEnable":false,"isVisible":false,"originalPrice":100.00,"startTime":1733537980000,"targetCount":1}
+25-01-08.12:48:03.328 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+25-01-08.12:48:03.331 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+25-01-08.14:15:39.462 [main            ] INFO  IIndexGroupBuyMarketServiceTest - Starting IIndexGroupBuyMarketServiceTest using Java 1.8.0_421 on DESKTOP-I26V24T with PID 27064 (started by mufen in D:\project4xfg\group-buy-mufen\group-buy-mufen-app)
+25-01-08.14:15:39.462 [main            ] INFO  IIndexGroupBuyMarketServiceTest - The following 1 profile is active: "dev"
+25-01-08.14:15:41.353 [main            ] INFO  IIndexGroupBuyMarketServiceTest - Started IIndexGroupBuyMarketServiceTest in 2.27 seconds (JVM running for 3.126)
+25-01-08.14:15:41.671 [main            ] INFO  RootNode               - 拼团商品查询试算服务-RootNode userId: mufenqwq, requestParam: {"channel":"c01","goodsId":"9890001","source":"s01","userId":"mufenqwq"}
+25-01-08.14:15:41.674 [main            ] INFO  SwitchNode             - 拼团商品查询试算服务-SwitchNode userId:mufenqwq requestParameter:{"channel":"c01","goodsId":"9890001","source":"s01","userId":"mufenqwq"}
+25-01-08.14:15:41.696 [pool-2-thread-2 ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+25-01-08.14:15:42.158 [pool-2-thread-2 ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+25-01-08.14:15:42.202 [main            ] INFO  MarketNode             - 拼团商品查询试算服务-MarketNode userId:mufenqwq 异步线程加载数据「GroupBuyActivityDiscountVO、SkuVO」完成
+25-01-08.14:15:42.202 [main            ] INFO  MarketNode             - 拼团商品查询试算服务-Market userId: mufenqwq, requestParam: {"channel":"c01","goodsId":"9890001","source":"s01","userId":"mufenqwq"}
+25-01-08.14:15:42.202 [main            ] INFO  NCalculateService      - 优惠策略折扣计算: 基础折扣
+25-01-08.14:15:42.203 [main            ] INFO  EndNode                - 拼团商品查询试算服务-EndNode userId: mufenqwq, requestParam: {"channel":"c01","goodsId":"9890001","source":"s01","userId":"mufenqwq"}
+25-01-08.14:15:42.204 [main            ] INFO  IIndexGroupBuyMarketServiceTest - 请求参数: {"channel":"c01","goodsId":"9890001","source":"s01","userId":"mufenqwq"}
+25-01-08.14:15:42.211 [main            ] INFO  IIndexGroupBuyMarketServiceTest - 响应参数: {"deductionPrice":1.99,"endTime":1733537980000,"goodsId":"9890001","goodsName":"《手写MyBatis：渐进式源码实践》","isEnable":false,"isVisible":false,"originalPrice":100.00,"startTime":1733537980000,"targetCount":1}
+25-01-08.14:15:42.219 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+25-01-08.14:15:42.222 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+25-01-08.14:32:45.925 [main            ] INFO  IIndexGroupBuyMarketServiceTest - Starting IIndexGroupBuyMarketServiceTest using Java 1.8.0_421 on DESKTOP-I26V24T with PID 11000 (started by mufen in D:\project4xfg\group-buy-mufen\group-buy-mufen-app)
+25-01-08.14:32:45.926 [main            ] INFO  IIndexGroupBuyMarketServiceTest - The following 1 profile is active: "dev"
+25-01-08.14:32:47.591 [main            ] INFO  IIndexGroupBuyMarketServiceTest - Started IIndexGroupBuyMarketServiceTest in 2.027 seconds (JVM running for 2.767)
+25-01-08.14:32:47.886 [main            ] INFO  RootNode               - 拼团商品查询试算服务-RootNode userId: mufenqwq, requestParam: {"channel":"c01","goodsId":"9890001","source":"s01","userId":"mufenqwq"}
+25-01-08.14:32:47.891 [main            ] INFO  SwitchNode             - 拼团商品查询试算服务-SwitchNode userId:mufenqwq requestParameter:{"channel":"c01","goodsId":"9890001","source":"s01","userId":"mufenqwq"}
+25-01-08.14:32:47.919 [pool-2-thread-1 ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+25-01-08.14:32:48.417 [pool-2-thread-1 ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+25-01-08.14:32:48.456 [main            ] INFO  MarketNode             - 拼团商品查询试算服务-MarketNode userId:mufenqwq 异步线程加载数据「GroupBuyActivityDiscountVO、SkuVO」完成
+25-01-08.14:32:48.456 [main            ] INFO  MarketNode             - 拼团商品查询试算服务-Market userId: mufenqwq, requestParam: {"channel":"c01","goodsId":"9890001","source":"s01","userId":"mufenqwq"}
+25-01-08.14:32:48.456 [main            ] INFO  MJCalculateService     - 优惠策略折扣计算: 基础折扣
+25-01-08.14:32:48.456 [main            ] INFO  EndNode                - 拼团商品查询试算服务-EndNode userId: mufenqwq, requestParam: {"channel":"c01","goodsId":"9890001","source":"s01","userId":"mufenqwq"}
+25-01-08.14:32:48.457 [main            ] INFO  IIndexGroupBuyMarketServiceTest - 请求参数: {"channel":"c01","goodsId":"9890001","source":"s01","userId":"mufenqwq"}
+25-01-08.14:32:48.465 [main            ] INFO  IIndexGroupBuyMarketServiceTest - 响应参数: {"deductionPrice":90.00,"endTime":1733537980000,"goodsId":"9890001","goodsName":"《手写MyBatis：渐进式源码实践》","isEnable":false,"isVisible":false,"originalPrice":100.00,"startTime":1733537980000,"targetCount":1}
+25-01-08.14:32:48.475 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+25-01-08.14:32:48.478 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
