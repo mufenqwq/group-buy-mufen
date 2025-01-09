@@ -1,6 +1,7 @@
 package site.mufen.domain.activity.adapter.repository;
 
 import site.mufen.domain.activity.model.valobj.GroupBuyActivityDiscountVO;
+import site.mufen.domain.activity.model.valobj.SCSkuActivityVO;
 import site.mufen.domain.activity.model.valobj.SkuVO;
 
 /**
@@ -9,7 +10,9 @@ import site.mufen.domain.activity.model.valobj.SkuVO;
  * @create 2025/1/7 21:51
  */
 public interface IActivityRepository {
-    GroupBuyActivityDiscountVO queryGroupBuyActivityDiscountVO(String source, String channel);
+    GroupBuyActivityDiscountVO queryGroupBuyActivityDiscountVO(Long activityId);
 
     SkuVO querySkuByGoodsId(String goodsId);
+
+    SCSkuActivityVO querySCSkuActivityBySCGoodsId(String source, String channel, String goodsId);
 }

@@ -34,6 +34,8 @@ public class MarketNode extends AbstractGroupBuyMarketSupport<MarketProductEntit
     private ThreadPoolExecutor threadPoolExecutor;
     @Resource
     private EndNode endNode;
+    @Resource
+    private ErrorNode errorNode;
 
     private final Map<String, IDiscountCalculateService> discountCalculateServiceMap;
 
@@ -43,7 +45,7 @@ public class MarketNode extends AbstractGroupBuyMarketSupport<MarketProductEntit
 
     @Override
     protected void multiThread(MarketProductEntity requestParam, DefaultActivityStrategyFactory.DynamicContext dynamicCtx) throws ExecutionException, InterruptedException, TimeoutException {
-        QueryGroupBuyActivityDiscountVOThreadTask queryGroupBuyActivityDiscountVOThreadTask = new QueryGroupBuyActivityDiscountVOThreadTask(activityRepository, requestParam.getSource(), requestParam.getChannel());
+        QueryGroupBuyActivityDiscountVOThreadTask queryGroupBuyActivityDiscountVOThreadTask = new QueryGroupBuyActivityDiscountVOThreadTask(activityRepository, requestParam.getSource(), requestParam.getChannel(), requestParam.getGoodsId());
         FutureTask<GroupBuyActivityDiscountVO> futureTask = new FutureTask<>(queryGroupBuyActivityDiscountVOThreadTask);
         threadPoolExecutor.execute(futureTask);
 
@@ -64,22 +66,27 @@ public class MarketNode extends AbstractGroupBuyMarketSupport<MarketProductEntit
 
         // todo 拼团优惠试算
         GroupBuyActivityDiscountVO groupBuyActivityDiscountVO = dynamicCtx.getGroupBuyActivityDiscountVO();
+        if (null == groupBuyActivityDiscountVO) return router(requestParam, dynamicCtx);
         SkuVO skuVO = dynamicCtx.getSkuVO();
-        BigDecimal originalPrice = skuVO.getOriginalPrice();
         GroupBuyActivityDiscountVO.GroupBuyDiscount groupBuyDiscount = groupBuyActivityDiscountVO.getGroupBuyDiscount();
+        if (null == groupBuyDiscount || null == skuVO) return router(requestParam, dynamicCtx);
         String marketPlan = groupBuyDiscount.getMarketPlan();
         IDiscountCalculateService discountCalculateService = discountCalculateServiceMap.get(marketPlan);
         if (discountCalculateService == null) {
             log.info("不存在{}类型的折扣计算服务, 支持类型为:{}", marketPlan, JSON.toJSONString(discountCalculateServiceMap.keySet()));
             throw new AppException(ResponseCode.E0001.getCode(), ResponseCode.E0001.getInfo());
         }
-        BigDecimal discountPrice = discountCalculateService.discountCalculate(requestParam.getUserId(), originalPrice, groupBuyDiscount);
+        BigDecimal discountPrice = discountCalculateService.discountCalculate(requestParam.getUserId(), skuVO.getOriginalPrice(), groupBuyDiscount);
         dynamicCtx.setDeductionPrice(discountPrice);
         return router(requestParam, dynamicCtx);
     }
 
     @Override
     public StrategyHandler<MarketProductEntity, DefaultActivityStrategyFactory.DynamicContext, TrialBalanceEntity> get(MarketProductEntity requestParam, DefaultActivityStrategyFactory.DynamicContext dynamicCtx) {
+        // 不存在配置的拼团活动，走异常节点
+        if (null == dynamicCtx.getGroupBuyActivityDiscountVO() || null == dynamicCtx.getSkuVO() || null == dynamicCtx.getDeductionPrice()) {
+            return errorNode;
+        }
         return endNode;
     }
 }

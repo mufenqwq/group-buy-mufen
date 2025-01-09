@@ -4,12 +4,15 @@ import org.springframework.stereotype.Repository;
 import site.mufen.domain.activity.adapter.repository.IActivityRepository;
 import site.mufen.domain.activity.model.valobj.DiscountTypeEnum;
 import site.mufen.domain.activity.model.valobj.GroupBuyActivityDiscountVO;
+import site.mufen.domain.activity.model.valobj.SCSkuActivityVO;
 import site.mufen.domain.activity.model.valobj.SkuVO;
 import site.mufen.infrastructure.dao.IGroupBuyActivityDao;
 import site.mufen.infrastructure.dao.IGroupBuyDiscountDao;
+import site.mufen.infrastructure.dao.ISCSkuActivityDao;
 import site.mufen.infrastructure.dao.ISkuDao;
 import site.mufen.infrastructure.dao.po.GroupBuyActivity;
 import site.mufen.infrastructure.dao.po.GroupBuyDiscount;
+import site.mufen.infrastructure.dao.po.SCSkuActivity;
 import site.mufen.infrastructure.dao.po.Sku;
 
 import javax.annotation.Resource;
@@ -28,13 +31,17 @@ public class ActivityRepository implements IActivityRepository {
     private IGroupBuyDiscountDao groupBuyDiscountDao;
     @Resource
     private ISkuDao skuDao;
+    @Resource
+    private ISCSkuActivityDao iscSkuActivityDao;
 
     @Override
-    public GroupBuyActivityDiscountVO queryGroupBuyActivityDiscountVO(String source, String channel) {
+    public GroupBuyActivityDiscountVO queryGroupBuyActivityDiscountVO(Long activityId) {
         GroupBuyActivity groupBuyActivityRes = groupBuyActivityDao.queryValidGroupBuyActivity(GroupBuyActivity.builder()
-            .source(source).channel(channel).build());
+            .activityId(activityId).build());
+        if (null == groupBuyActivityRes) return null;
         String discountId = groupBuyActivityRes.getDiscountId();
         GroupBuyDiscount groupBuyDiscountRes = groupBuyDiscountDao.queryGroupBuyDiscountByDiscountId(discountId);
+        if (null == groupBuyDiscountRes) return null;
         GroupBuyActivityDiscountVO groupBuyActivityDiscountVO = new GroupBuyActivityDiscountVO();
 
         GroupBuyActivityDiscountVO.GroupBuyDiscount groupBuyDiscount = GroupBuyActivityDiscountVO.GroupBuyDiscount.builder()
@@ -47,9 +54,6 @@ public class ActivityRepository implements IActivityRepository {
 
         groupBuyActivityDiscountVO.setActivityId(groupBuyActivityRes.getActivityId());
         groupBuyActivityDiscountVO.setActivityName(groupBuyActivityRes.getActivityName());
-        groupBuyActivityDiscountVO.setSource(groupBuyActivityRes.getSource());
-        groupBuyActivityDiscountVO.setChannel(groupBuyActivityRes.getChannel());
-        groupBuyActivityDiscountVO.setGoodsId(groupBuyActivityRes.getGoodsId());
         groupBuyActivityDiscountVO.setGroupBuyDiscount(groupBuyDiscount);
         groupBuyActivityDiscountVO.setGroupType(groupBuyActivityRes.getGroupType());
         groupBuyActivityDiscountVO.setTakeLimitCount(groupBuyActivityRes.getTakeLimitCount());
@@ -68,10 +72,27 @@ public class ActivityRepository implements IActivityRepository {
     @Override
     public SkuVO querySkuByGoodsId(String goodsId) {
         Sku sku = skuDao.querySkuByGoodsId(goodsId);
+        if (null == sku) return null;
         return SkuVO.builder()
-            .goodsId(sku.getGoodsId())
-            .goodsName(sku.getGoodsName())
             .originalPrice(sku.getOriginalPrice())
-            .build();
+            .goodsId(sku.getGoodsId())
+            .goodsName(sku.getGoodsName()).build();
+    }
+
+    @Override
+    public SCSkuActivityVO querySCSkuActivityBySCGoodsId(String source, String channel, String goodsId) {
+        SCSkuActivity scSkuActivityReq = new SCSkuActivity();
+        scSkuActivityReq.setSource(source);
+        scSkuActivityReq.setChannel(channel);
+        scSkuActivityReq.setGoodsId(goodsId);
+
+        SCSkuActivity scSkuActivity = iscSkuActivityDao.querySCSkuActivityByGoodsId(scSkuActivityReq);
+        if (null == scSkuActivity) return null;
+
+        return SCSkuActivityVO.builder()
+            .source(scSkuActivity.getSource())
+            .channel(scSkuActivity.getChannel())
+            .activityId(scSkuActivity.getActivityId())
+            .goodsId(scSkuActivity.getGoodsId()).build();
     }
 }
