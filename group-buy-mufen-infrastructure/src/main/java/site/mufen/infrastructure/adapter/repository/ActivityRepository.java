@@ -1,5 +1,6 @@
 package site.mufen.infrastructure.adapter.repository;
 
+import org.redisson.api.RBitSet;
 import org.springframework.stereotype.Repository;
 import site.mufen.domain.activity.adapter.repository.IActivityRepository;
 import site.mufen.domain.activity.model.valobj.DiscountTypeEnum;
@@ -14,6 +15,7 @@ import site.mufen.infrastructure.dao.po.GroupBuyActivity;
 import site.mufen.infrastructure.dao.po.GroupBuyDiscount;
 import site.mufen.infrastructure.dao.po.SCSkuActivity;
 import site.mufen.infrastructure.dao.po.Sku;
+import site.mufen.infrastructure.redis.IRedisService;
 
 import javax.annotation.Resource;
 
@@ -33,6 +35,8 @@ public class ActivityRepository implements IActivityRepository {
     private ISkuDao skuDao;
     @Resource
     private ISCSkuActivityDao iscSkuActivityDao;
+    @Resource
+    private IRedisService redisService;
 
     @Override
     public GroupBuyActivityDiscountVO queryGroupBuyActivityDiscountVO(Long activityId) {
@@ -94,5 +98,12 @@ public class ActivityRepository implements IActivityRepository {
             .channel(scSkuActivity.getChannel())
             .activityId(scSkuActivity.getActivityId())
             .goodsId(scSkuActivity.getGoodsId()).build();
+    }
+
+    @Override
+    public boolean isTagCrowdRange(String tagId, String userId) {
+        RBitSet bitSet = redisService.getBitSet(tagId);
+        if (!bitSet.isExists()) return true;
+        return bitSet.get(redisService.getIndexFromUserId(userId));
     }
 }

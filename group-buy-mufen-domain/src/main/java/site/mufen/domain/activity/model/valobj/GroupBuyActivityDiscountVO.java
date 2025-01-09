@@ -1,8 +1,11 @@
 package site.mufen.domain.activity.model.valobj;
 
 import lombok.*;
+import org.apache.commons.lang3.StringUtils;
+import site.mufen.types.common.Constants;
 
 import java.time.LocalDateTime;
+import java.util.Objects;
 
 /**
  * @author mufen
@@ -74,6 +77,33 @@ public class GroupBuyActivityDiscountVO {
      * 人群标签规则范围（多选；1可见限制、2参与限制）
      */
     private String tagScope;
+
+
+    /**
+     * 是否可见
+     * @return 结果
+     */
+    public boolean isVisible() {
+        if (StringUtils.isBlank(this.tagScope)) return true;
+        String[] split = this.tagScope.split(Constants.SPLIT);
+        if (split.length > 0 && Objects.equals(split[0], "1")) {
+            return TagScopeEnumVO.VISIBLE.getRefuse();
+        }
+        return TagScopeEnumVO.VISIBLE.getAllow();
+    }
+
+    /**
+     * 是否可以参与,只要数据库中存在一个这样的值，首次参与就为false
+     * @return 结果
+     */
+    public boolean isEnable() {
+        if (StringUtils.isBlank(this.tagScope)) return false;
+        String[] split = this.tagScope.split(Constants.SPLIT);
+        if (split.length == 2 && Objects.equals(split[1], "2")) {
+            return TagScopeEnumVO.ENABLE.getRefuse();
+        }
+        return TagScopeEnumVO.ENABLE.getAllow();
+    }
 
     @Getter
     @Builder
