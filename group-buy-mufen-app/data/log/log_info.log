@@ -1,57 +1,181 @@
-25-01-10.01:07:07.454 [main            ] INFO  IIndexGroupBuyMarketServiceTest - Starting IIndexGroupBuyMarketServiceTest using Java 1.8.0_421 on DESKTOP-I26V24T with PID 3172 (started by mufen in D:\project4xfg\group-buy-mufen\group-buy-mufen-app)
-25-01-10.01:07:07.455 [main            ] INFO  IIndexGroupBuyMarketServiceTest - The following 1 profile is active: "dev"
-25-01-10.01:07:08.286 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-25-01-10.01:07:08.289 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-25-01-10.01:07:08.319 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 15 ms. Found 0 Redis repository interfaces.
-25-01-10.01:07:08.727 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisClientConfig' of type [site.mufen.config.RedisClientConfig$$EnhancerBySpringCGLIB$$2969ff78] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-25-01-10.01:07:09.157 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redis.sdk.config-site.mufen.config.RedisClientConfigProperties' of type [site.mufen.config.RedisClientConfigProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-25-01-10.01:07:09.596 [main            ] INFO  Version                - Redisson 3.26.0
-25-01-10.01:07:10.053 [redisson-netty-1-4] INFO  ConnectionsHolder      - 1 connections initialized for 172.28.179.213/172.28.179.213:16379
-25-01-10.01:07:10.065 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 172.28.179.213/172.28.179.213:16379
-25-01-10.01:07:10.115 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redissonClient' of type [org.redisson.Redisson] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-25-01-10.01:07:12.319 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
-25-01-10.01:07:12.372 [main            ] INFO  IIndexGroupBuyMarketServiceTest - Started IIndexGroupBuyMarketServiceTest in 5.32 seconds (JVM running for 6.287)
-25-01-10.01:07:12.840 [main            ] INFO  RootNode               - 拼团商品查询试算服务-RootNode userId: mufenqwq, requestParam: {"channel":"c01","goodsId":"9890001","source":"s01","userId":"mufenqwq"}
-25-01-10.01:07:12.840 [main            ] INFO  SwitchNode             - 拼团商品查询试算服务-SwitchNode userId:mufenqwq requestParameter:{"channel":"c01","goodsId":"9890001","source":"s01","userId":"mufenqwq"}
-25-01-10.01:07:12.846 [main            ] INFO  SwitchNode             - 活动降级拦截 userId:mufenqwq
-25-01-10.01:07:29.560 [main            ] INFO  IIndexGroupBuyMarketServiceTest - Starting IIndexGroupBuyMarketServiceTest using Java 1.8.0_421 on DESKTOP-I26V24T with PID 19796 (started by mufen in D:\project4xfg\group-buy-mufen\group-buy-mufen-app)
-25-01-10.01:07:29.561 [main            ] INFO  IIndexGroupBuyMarketServiceTest - The following 1 profile is active: "dev"
-25-01-10.01:07:30.237 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-25-01-10.01:07:30.240 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-25-01-10.01:07:30.266 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 14 ms. Found 0 Redis repository interfaces.
-25-01-10.01:07:30.607 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisClientConfig' of type [site.mufen.config.RedisClientConfig$$EnhancerBySpringCGLIB$$4ce9f39b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-25-01-10.01:07:30.865 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redis.sdk.config-site.mufen.config.RedisClientConfigProperties' of type [site.mufen.config.RedisClientConfigProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-25-01-10.01:07:31.105 [main            ] INFO  Version                - Redisson 3.26.0
-25-01-10.01:07:31.393 [redisson-netty-1-4] INFO  ConnectionsHolder      - 1 connections initialized for 172.28.179.213/172.28.179.213:16379
-25-01-10.01:07:31.404 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 172.28.179.213/172.28.179.213:16379
-25-01-10.01:07:31.443 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redissonClient' of type [org.redisson.Redisson] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-25-01-10.01:07:33.323 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
-25-01-10.01:07:33.372 [main            ] INFO  IIndexGroupBuyMarketServiceTest - Started IIndexGroupBuyMarketServiceTest in 4.184 seconds (JVM running for 4.991)
-25-01-10.01:07:33.685 [main            ] INFO  RootNode               - 拼团商品查询试算服务-RootNode userId: mufenqwq, requestParam: {"channel":"c01","goodsId":"9890001","source":"s01","userId":"mufenqwq"}
-25-01-10.01:07:33.685 [main            ] INFO  SwitchNode             - 拼团商品查询试算服务-SwitchNode userId:mufenqwq requestParameter:{"channel":"c01","goodsId":"9890001","source":"s01","userId":"mufenqwq"}
-25-01-10.01:07:33.691 [main            ] INFO  SwitchNode             - 拼团活动切量拦截 userId:mufenqwq
-25-01-10.01:08:58.035 [main            ] INFO  IIndexGroupBuyMarketServiceTest - Starting IIndexGroupBuyMarketServiceTest using Java 1.8.0_421 on DESKTOP-I26V24T with PID 1572 (started by mufen in D:\project4xfg\group-buy-mufen\group-buy-mufen-app)
-25-01-10.01:08:58.036 [main            ] INFO  IIndexGroupBuyMarketServiceTest - The following 1 profile is active: "dev"
-25-01-10.01:08:58.776 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-25-01-10.01:08:58.780 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-25-01-10.01:08:58.813 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 17 ms. Found 0 Redis repository interfaces.
-25-01-10.01:08:59.193 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisClientConfig' of type [site.mufen.config.RedisClientConfig$$EnhancerBySpringCGLIB$$437a3ac6] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-25-01-10.01:08:59.469 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redis.sdk.config-site.mufen.config.RedisClientConfigProperties' of type [site.mufen.config.RedisClientConfigProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-25-01-10.01:08:59.710 [main            ] INFO  Version                - Redisson 3.26.0
-25-01-10.01:09:00.002 [redisson-netty-1-4] INFO  ConnectionsHolder      - 1 connections initialized for 172.28.179.213/172.28.179.213:16379
-25-01-10.01:09:00.011 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 172.28.179.213/172.28.179.213:16379
-25-01-10.01:09:00.055 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redissonClient' of type [org.redisson.Redisson] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-25-01-10.01:09:01.989 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
-25-01-10.01:09:02.034 [main            ] INFO  IIndexGroupBuyMarketServiceTest - Started IIndexGroupBuyMarketServiceTest in 4.37 seconds (JVM running for 5.209)
-25-01-10.01:09:02.362 [main            ] INFO  RootNode               - 拼团商品查询试算服务-RootNode userId: mufenqwq, requestParam: {"channel":"c01","goodsId":"9890001","source":"s01","userId":"mufenqwq"}
-25-01-10.01:09:02.362 [main            ] INFO  SwitchNode             - 拼团商品查询试算服务-SwitchNode userId:mufenqwq requestParameter:{"channel":"c01","goodsId":"9890001","source":"s01","userId":"mufenqwq"}
-25-01-10.01:09:02.398 [pool-2-thread-1 ] INFO  HikariDataSource       - HikariPool-1 - Starting...
-25-01-10.01:09:02.835 [pool-2-thread-1 ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
-25-01-10.01:09:02.889 [main            ] INFO  MarketNode             - 拼团商品查询试算服务-MarketNode userId:mufenqwq 异步线程加载数据「GroupBuyActivityDiscountVO、SkuVO」完成
-25-01-10.01:09:02.889 [main            ] INFO  MarketNode             - 拼团商品查询试算服务-Market userId: mufenqwq, requestParam: {"channel":"c01","goodsId":"9890001","source":"s01","userId":"mufenqwq"}
-25-01-10.01:09:02.889 [main            ] INFO  MJCalculateService     - 优惠策略折扣计算: 基础折扣
-25-01-10.01:09:02.893 [main            ] INFO  EndNode                - 拼团商品查询试算服务-EndNode userId: mufenqwq, requestParam: {"channel":"c01","goodsId":"9890001","source":"s01","userId":"mufenqwq"}
-25-01-10.01:09:02.895 [main            ] INFO  IIndexGroupBuyMarketServiceTest - 请求参数: {"channel":"c01","goodsId":"9890001","source":"s01","userId":"mufenqwq"}
-25-01-10.01:09:02.903 [main            ] INFO  IIndexGroupBuyMarketServiceTest - 响应参数: {"deductionPrice":90.00,"endTime":1733537980000,"goodsId":"9890001","goodsName":"《手写MyBatis：渐进式源码实践》","isEnable":false,"isVisible":true,"originalPrice":100.00,"startTime":1733537980000,"targetCount":1}
-25-01-10.01:09:02.915 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
-25-01-10.01:09:02.919 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+25-01-13.00:01:09.471 [main            ] INFO  ITagServiceTest        - Starting ITagServiceTest using Java 1.8.0_421 on DESKTOP-I26V24T with PID 24760 (started by mufen in D:\project4xfg\group-buy-mufen\group-buy-mufen-app)
+25-01-13.00:01:09.472 [main            ] INFO  ITagServiceTest        - The following 1 profile is active: "dev"
+25-01-13.00:01:10.678 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-01-13.00:01:10.681 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-01-13.00:01:10.721 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 20 ms. Found 0 Redis repository interfaces.
+25-01-13.00:01:11.234 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisClientConfig' of type [site.mufen.config.RedisClientConfig$$EnhancerBySpringCGLIB$$9bdae2a4] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+25-01-13.00:01:11.641 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redis.sdk.config-site.mufen.config.RedisClientConfigProperties' of type [site.mufen.config.RedisClientConfigProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+25-01-13.00:01:11.989 [main            ] INFO  Version                - Redisson 3.26.0
+25-01-13.00:01:12.417 [redisson-netty-1-4] INFO  ConnectionsHolder      - 1 connections initialized for 172.28.179.213/172.28.179.213:16379
+25-01-13.00:01:12.432 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 172.28.179.213/172.28.179.213:16379
+25-01-13.00:01:12.483 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redissonClient' of type [org.redisson.Redisson] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+25-01-13.00:01:14.709 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+25-01-13.00:01:14.763 [main            ] INFO  ITagServiceTest        - Started ITagServiceTest in 5.862 seconds (JVM running for 7.232)
+25-01-13.00:01:15.005 [main            ] INFO  ITagServiceTest        - mufen 存在，预期结果为 true，测试结果:true
+25-01-13.00:01:15.007 [main            ] INFO  ITagServiceTest        - WangPan 存在，预期结果为 true，测试结果:true
+25-01-13.00:01:15.008 [main            ] INFO  ITagServiceTest        - gudebai 不存在，预期结果为 false，测试结果:false
+25-01-13.00:01:28.007 [main            ] INFO  MarketTradeControllerTest - Starting MarketTradeControllerTest using Java 1.8.0_421 on DESKTOP-I26V24T with PID 27540 (started by mufen in D:\project4xfg\group-buy-mufen\group-buy-mufen-app)
+25-01-13.00:01:28.008 [main            ] INFO  MarketTradeControllerTest - The following 1 profile is active: "dev"
+25-01-13.00:01:28.925 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-01-13.00:01:28.930 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-01-13.00:01:28.964 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 17 ms. Found 0 Redis repository interfaces.
+25-01-13.00:01:29.318 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisClientConfig' of type [site.mufen.config.RedisClientConfig$$EnhancerBySpringCGLIB$$9cb0ab] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+25-01-13.00:01:29.670 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redis.sdk.config-site.mufen.config.RedisClientConfigProperties' of type [site.mufen.config.RedisClientConfigProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+25-01-13.00:01:29.997 [main            ] INFO  Version                - Redisson 3.26.0
+25-01-13.00:01:30.357 [redisson-netty-1-4] INFO  ConnectionsHolder      - 1 connections initialized for 172.28.179.213/172.28.179.213:16379
+25-01-13.00:01:30.371 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 172.28.179.213/172.28.179.213:16379
+25-01-13.00:01:30.426 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redissonClient' of type [org.redisson.Redisson] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+25-01-13.00:01:32.790 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+25-01-13.00:01:32.846 [main            ] INFO  MarketTradeControllerTest - Started MarketTradeControllerTest in 5.232 seconds (JVM running for 6.16)
+25-01-13.00:01:33.228 [main            ] INFO  MarketTradeController  - 营销订单锁单: mufenqwq LockMarketPayOrderRequestDTO: {"activityId":100123,"channel":"c01","goodsId":"9890001","outTradeNo":"272625258431","source":"s01","userId":"mufenqwq"}
+25-01-13.00:01:33.254 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+25-01-13.00:01:33.797 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+25-01-13.00:01:33.848 [main            ] INFO  RootNode               - 拼团商品查询试算服务-RootNode userId: mufenqwq, requestParam: {"channel":"c01","goodsId":"9890001","source":"s01","userId":"mufenqwq"}
+25-01-13.00:01:33.849 [main            ] INFO  SwitchNode             - 拼团商品查询试算服务-SwitchNode userId:mufenqwq requestParameter:{"channel":"c01","goodsId":"9890001","source":"s01","userId":"mufenqwq"}
+25-01-13.00:01:33.853 [main            ] INFO  SwitchNode             - 拼团活动切量拦截 userId:mufenqwq
+25-01-13.00:01:33.856 [main            ] ERROR MarketTradeController  - 营销交易锁单业务异常:mufenqwq LockMarketPayOrderRequestDTO:{"activityId":100123,"channel":"c01","goodsId":"9890001","outTradeNo":"272625258431","source":"s01","userId":"mufenqwq"}
+site.mufen.types.exception.AppException: null
+	at site.mufen.domain.activity.service.trial.node.SwitchNode.doApply(SwitchNode.java:44)
+	at site.mufen.domain.activity.service.trial.node.SwitchNode.doApply(SwitchNode.java:22)
+	at site.mufen.types.design.framework.tree.AbstractMultiThreadStrategyRouter.apply(AbstractMultiThreadStrategyRouter.java:39)
+	at site.mufen.types.design.framework.tree.AbstractMultiThreadStrategyRouter.router(AbstractMultiThreadStrategyRouter.java:30)
+	at site.mufen.domain.activity.service.trial.node.RootNode.doApply(RootNode.java:36)
+	at site.mufen.domain.activity.service.trial.node.RootNode.doApply(RootNode.java:22)
+	at site.mufen.types.design.framework.tree.AbstractMultiThreadStrategyRouter.apply(AbstractMultiThreadStrategyRouter.java:39)
+	at site.mufen.domain.activity.service.IndexGroupBuyMarketService.indexMarketTrial(IndexGroupBuyMarketService.java:26)
+	at site.mufen.trigger.http.MarketTradeController.lockMarketPayOrder(MarketTradeController.java:96)
+	at site.mufen.test.trigger.MarketTradeControllerTest.test_lockMarketPayOrder(MarketTradeControllerTest.java:41)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestExecutionCallbacks.evaluate(RunBeforeTestExecutionCallbacks.java:74)
+	at org.springframework.test.context.junit4.statements.RunAfterTestExecutionCallbacks.evaluate(RunAfterTestExecutionCallbacks.java:84)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:75)
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:86)
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:84)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:251)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38)
+	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:232)
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:55)
+25-01-13.00:01:33.860 [main            ] INFO  MarketTradeControllerTest - 测试结果 req:{"activityId":100123,"channel":"c01","goodsId":"9890001","outTradeNo":"272625258431","source":"s01","userId":"mufenqwq"} res:{"code":"E0004","info":"拼团活动切量处理"}
+25-01-13.00:01:33.874 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+25-01-13.00:01:33.879 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+25-01-13.00:03:34.531 [main            ] INFO  MarketTradeControllerTest - Starting MarketTradeControllerTest using Java 1.8.0_421 on DESKTOP-I26V24T with PID 28876 (started by mufen in D:\project4xfg\group-buy-mufen\group-buy-mufen-app)
+25-01-13.00:03:34.532 [main            ] INFO  MarketTradeControllerTest - The following 1 profile is active: "dev"
+25-01-13.00:03:35.469 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-01-13.00:03:35.472 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-01-13.00:03:35.509 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 17 ms. Found 0 Redis repository interfaces.
+25-01-13.00:03:35.889 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisClientConfig' of type [site.mufen.config.RedisClientConfig$$EnhancerBySpringCGLIB$$9cb0ab] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+25-01-13.00:03:36.276 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redis.sdk.config-site.mufen.config.RedisClientConfigProperties' of type [site.mufen.config.RedisClientConfigProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+25-01-13.00:03:36.591 [main            ] INFO  Version                - Redisson 3.26.0
+25-01-13.00:03:36.952 [redisson-netty-1-4] INFO  ConnectionsHolder      - 1 connections initialized for 172.28.179.213/172.28.179.213:16379
+25-01-13.00:03:36.964 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 172.28.179.213/172.28.179.213:16379
+25-01-13.00:03:37.018 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redissonClient' of type [org.redisson.Redisson] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+25-01-13.00:03:39.330 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+25-01-13.00:03:39.380 [main            ] INFO  MarketTradeControllerTest - Started MarketTradeControllerTest in 5.313 seconds (JVM running for 6.183)
+25-01-13.00:03:39.829 [main            ] INFO  MarketTradeController  - 营销订单锁单: mufenqwq LockMarketPayOrderRequestDTO: {"activityId":100123,"channel":"c01","goodsId":"9890001","outTradeNo":"293547947237","source":"s01","userId":"mufenqwq"}
+25-01-13.00:03:39.852 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+25-01-13.00:03:40.381 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+25-01-13.00:03:40.430 [main            ] INFO  RootNode               - 拼团商品查询试算服务-RootNode userId: mufenqwq, requestParam: {"channel":"c01","goodsId":"9890001","source":"s01","userId":"mufenqwq"}
+25-01-13.00:03:40.430 [main            ] INFO  SwitchNode             - 拼团商品查询试算服务-SwitchNode userId:mufenqwq requestParameter:{"channel":"c01","goodsId":"9890001","source":"s01","userId":"mufenqwq"}
+25-01-13.00:03:40.471 [main            ] INFO  MarketNode             - 拼团商品查询试算服务-MarketNode userId:mufenqwq 异步线程加载数据「GroupBuyActivityDiscountVO、SkuVO」完成
+25-01-13.00:03:40.471 [main            ] INFO  MarketNode             - 拼团商品查询试算服务-Market userId: mufenqwq, requestParam: {"channel":"c01","goodsId":"9890001","source":"s01","userId":"mufenqwq"}
+25-01-13.00:03:40.471 [main            ] INFO  MJCalculateService     - 优惠策略折扣计算: 基础折扣
+25-01-13.00:03:40.477 [main            ] INFO  EndNode                - 拼团商品查询试算服务-EndNode userId: mufenqwq, requestParam: {"channel":"c01","goodsId":"9890001","source":"s01","userId":"mufenqwq"}
+25-01-13.00:03:40.543 [main            ] INFO  MarketTradeController  - 交易锁单记录(新):mufenqwq marketPayOrderEntity:{"deductionPrice":90.00,"orderId":"382362324653","tradeOrderStatusEnumVO":"CREATE"}
+25-01-13.00:03:40.549 [main            ] INFO  MarketTradeControllerTest - 测试结果 req:{"activityId":100123,"channel":"c01","goodsId":"9890001","outTradeNo":"293547947237","source":"s01","userId":"mufenqwq"} res:{"code":"0000","data":{"deductionPrice":90.00,"orderId":"382362324653","tradeOrderStatus":0},"info":"成功"}
+25-01-13.00:03:40.568 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+25-01-13.00:03:40.588 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+25-01-13.00:05:13.202 [main            ] INFO  MarketTradeControllerTest - Starting MarketTradeControllerTest using Java 1.8.0_421 on DESKTOP-I26V24T with PID 5276 (started by mufen in D:\project4xfg\group-buy-mufen\group-buy-mufen-app)
+25-01-13.00:05:13.203 [main            ] INFO  MarketTradeControllerTest - The following 1 profile is active: "dev"
+25-01-13.00:05:13.937 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-01-13.00:05:13.940 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-01-13.00:05:13.970 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 17 ms. Found 0 Redis repository interfaces.
+25-01-13.00:05:14.456 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisClientConfig' of type [site.mufen.config.RedisClientConfig$$EnhancerBySpringCGLIB$$1b988c0c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+25-01-13.00:05:14.759 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redis.sdk.config-site.mufen.config.RedisClientConfigProperties' of type [site.mufen.config.RedisClientConfigProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+25-01-13.00:05:15.075 [main            ] INFO  Version                - Redisson 3.26.0
+25-01-13.00:05:15.616 [redisson-netty-1-4] INFO  ConnectionsHolder      - 1 connections initialized for 172.28.179.213/172.28.179.213:16379
+25-01-13.00:05:15.636 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 172.28.179.213/172.28.179.213:16379
+25-01-13.00:05:15.741 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redissonClient' of type [org.redisson.Redisson] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+25-01-13.00:05:18.044 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+25-01-13.00:05:18.118 [main            ] INFO  MarketTradeControllerTest - Started MarketTradeControllerTest in 5.323 seconds (JVM running for 6.302)
+25-01-13.00:05:18.488 [main            ] INFO  MarketTradeController  - 营销订单锁单: mufenqwq LockMarketPayOrderRequestDTO: {"activityId":100123,"channel":"c01","goodsId":"9890001","outTradeNo":"819315599346","source":"s01","teamId":"94500670","userId":"mufenqwq"}
+25-01-13.00:05:18.515 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+25-01-13.00:05:18.930 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+25-01-13.00:05:18.972 [main            ] INFO  RootNode               - 拼团商品查询试算服务-RootNode userId: mufenqwq, requestParam: {"channel":"c01","goodsId":"9890001","source":"s01","userId":"mufenqwq"}
+25-01-13.00:05:18.972 [main            ] INFO  SwitchNode             - 拼团商品查询试算服务-SwitchNode userId:mufenqwq requestParameter:{"channel":"c01","goodsId":"9890001","source":"s01","userId":"mufenqwq"}
+25-01-13.00:05:18.991 [main            ] INFO  MarketNode             - 拼团商品查询试算服务-MarketNode userId:mufenqwq 异步线程加载数据「GroupBuyActivityDiscountVO、SkuVO」完成
+25-01-13.00:05:18.991 [main            ] INFO  MarketNode             - 拼团商品查询试算服务-Market userId: mufenqwq, requestParam: {"channel":"c01","goodsId":"9890001","source":"s01","userId":"mufenqwq"}
+25-01-13.00:05:18.991 [main            ] INFO  MJCalculateService     - 优惠策略折扣计算: 基础折扣
+25-01-13.00:05:18.997 [main            ] INFO  EndNode                - 拼团商品查询试算服务-EndNode userId: mufenqwq, requestParam: {"channel":"c01","goodsId":"9890001","source":"s01","userId":"mufenqwq"}
+25-01-13.00:05:19.044 [main            ] INFO  MarketTradeController  - 交易锁单记录(新):mufenqwq marketPayOrderEntity:{"deductionPrice":90.00,"orderId":"619884069000","tradeOrderStatusEnumVO":"CREATE"}
+25-01-13.00:05:19.049 [main            ] INFO  MarketTradeControllerTest - 测试结果 req:{"activityId":100123,"channel":"c01","goodsId":"9890001","outTradeNo":"819315599346","source":"s01","teamId":"94500670","userId":"mufenqwq"} res:{"code":"0000","data":{"deductionPrice":90.00,"orderId":"619884069000","tradeOrderStatus":0},"info":"成功"}
+25-01-13.00:05:19.065 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+25-01-13.00:05:19.080 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+25-01-13.00:05:58.320 [main            ] INFO  MarketTradeControllerTest - Starting MarketTradeControllerTest using Java 1.8.0_421 on DESKTOP-I26V24T with PID 9156 (started by mufen in D:\project4xfg\group-buy-mufen\group-buy-mufen-app)
+25-01-13.00:05:58.320 [main            ] INFO  MarketTradeControllerTest - The following 1 profile is active: "dev"
+25-01-13.00:05:59.048 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-01-13.00:05:59.052 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-01-13.00:05:59.082 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 16 ms. Found 0 Redis repository interfaces.
+25-01-13.00:05:59.444 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisClientConfig' of type [site.mufen.config.RedisClientConfig$$EnhancerBySpringCGLIB$$dadbe7e3] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+25-01-13.00:05:59.709 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redis.sdk.config-site.mufen.config.RedisClientConfigProperties' of type [site.mufen.config.RedisClientConfigProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+25-01-13.00:05:59.967 [main            ] INFO  Version                - Redisson 3.26.0
+25-01-13.00:06:00.268 [redisson-netty-1-4] INFO  ConnectionsHolder      - 1 connections initialized for 172.28.179.213/172.28.179.213:16379
+25-01-13.00:06:00.279 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 172.28.179.213/172.28.179.213:16379
+25-01-13.00:06:00.320 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redissonClient' of type [org.redisson.Redisson] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+25-01-13.00:06:02.527 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+25-01-13.00:06:02.582 [main            ] INFO  MarketTradeControllerTest - Started MarketTradeControllerTest in 4.657 seconds (JVM running for 5.464)
+25-01-13.00:06:02.948 [main            ] INFO  MarketTradeController  - 营销订单锁单: mufenqwq LockMarketPayOrderRequestDTO: {"activityId":100123,"channel":"c01","goodsId":"9890001","outTradeNo":"794936881716","source":"s01","teamId":"94500670","userId":"mufenqwq"}
+25-01-13.00:06:02.973 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+25-01-13.00:06:03.414 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+25-01-13.00:06:03.459 [main            ] INFO  RootNode               - 拼团商品查询试算服务-RootNode userId: mufenqwq, requestParam: {"channel":"c01","goodsId":"9890001","source":"s01","userId":"mufenqwq"}
+25-01-13.00:06:03.459 [main            ] INFO  SwitchNode             - 拼团商品查询试算服务-SwitchNode userId:mufenqwq requestParameter:{"channel":"c01","goodsId":"9890001","source":"s01","userId":"mufenqwq"}
+25-01-13.00:06:03.480 [main            ] INFO  MarketNode             - 拼团商品查询试算服务-MarketNode userId:mufenqwq 异步线程加载数据「GroupBuyActivityDiscountVO、SkuVO」完成
+25-01-13.00:06:03.480 [main            ] INFO  MarketNode             - 拼团商品查询试算服务-Market userId: mufenqwq, requestParam: {"channel":"c01","goodsId":"9890001","source":"s01","userId":"mufenqwq"}
+25-01-13.00:06:03.480 [main            ] INFO  MJCalculateService     - 优惠策略折扣计算: 基础折扣
+25-01-13.00:06:03.487 [main            ] INFO  EndNode                - 拼团商品查询试算服务-EndNode userId: mufenqwq, requestParam: {"channel":"c01","goodsId":"9890001","source":"s01","userId":"mufenqwq"}
+25-01-13.00:06:03.524 [main            ] INFO  MarketTradeController  - 交易锁单记录(新):mufenqwq marketPayOrderEntity:{"deductionPrice":90.00,"orderId":"812910309022","tradeOrderStatusEnumVO":"CREATE"}
+25-01-13.00:06:03.530 [main            ] INFO  MarketTradeControllerTest - 测试结果 req:{"activityId":100123,"channel":"c01","goodsId":"9890001","outTradeNo":"794936881716","source":"s01","teamId":"94500670","userId":"mufenqwq"} res:{"code":"0000","data":{"deductionPrice":90.00,"orderId":"812910309022","tradeOrderStatus":0},"info":"成功"}
+25-01-13.00:06:03.549 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+25-01-13.00:06:03.564 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+25-01-13.00:07:07.837 [main            ] INFO  MarketTradeControllerTest - Starting MarketTradeControllerTest using Java 1.8.0_421 on DESKTOP-I26V24T with PID 27916 (started by mufen in D:\project4xfg\group-buy-mufen\group-buy-mufen-app)
+25-01-13.00:07:07.839 [main            ] INFO  MarketTradeControllerTest - The following 1 profile is active: "dev"
+25-01-13.00:07:08.705 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-01-13.00:07:08.709 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-01-13.00:07:08.740 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 15 ms. Found 0 Redis repository interfaces.
+25-01-13.00:07:09.132 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisClientConfig' of type [site.mufen.config.RedisClientConfig$$EnhancerBySpringCGLIB$$c2e43fd2] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+25-01-13.00:07:09.553 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redis.sdk.config-site.mufen.config.RedisClientConfigProperties' of type [site.mufen.config.RedisClientConfigProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+25-01-13.00:07:10.100 [main            ] INFO  Version                - Redisson 3.26.0
+25-01-13.00:07:10.631 [redisson-netty-1-5] INFO  ConnectionsHolder      - 1 connections initialized for 172.28.179.213/172.28.179.213:16379
+25-01-13.00:07:10.652 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 172.28.179.213/172.28.179.213:16379
+25-01-13.00:07:10.759 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redissonClient' of type [org.redisson.Redisson] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+25-01-13.00:07:14.263 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+25-01-13.00:07:14.331 [main            ] INFO  MarketTradeControllerTest - Started MarketTradeControllerTest in 7.024 seconds (JVM running for 8.54)
+25-01-13.00:07:18.130 [main            ] INFO  MarketTradeController  - 营销订单锁单: mufenqwq LockMarketPayOrderRequestDTO: {"activityId":100123,"channel":"c01","goodsId":"9890001","outTradeNo":"328108020297","source":"s01","teamId":"94500670","userId":"mufenqwq"}
+25-01-13.00:07:18.186 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+25-01-13.00:07:18.939 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+25-01-13.00:07:22.044 [main            ] INFO  MarketTradeController  - 交易锁单拦截-拼单目标已达成:mufenqwq 94500670
+25-01-13.00:07:23.364 [main            ] INFO  MarketTradeControllerTest - 测试结果 req:{"activityId":100123,"channel":"c01","goodsId":"9890001","outTradeNo":"328108020297","source":"s01","teamId":"94500670","userId":"mufenqwq"} res:{"code":"E0006","info":"拼团组队完结，锁单量已达成"}
+25-01-13.00:07:23.389 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+25-01-13.00:07:23.402 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.

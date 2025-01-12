@@ -13,7 +13,7 @@
     </resultMap>
     <select id="querySCSkuActivityByGoodsId" resultType="site.mufen.infrastructure.dao.po.SCSkuActivity">
         select source, channel, activity_id, goods_id
-            from group_buy_market.sc_sku_activity where goods_id = #{goodsId}
+            from group_buy_market.sc_sku_activity where goods_id = #{goodsId} and source = #{source} and channel = #{channel}
     </select>
 
 

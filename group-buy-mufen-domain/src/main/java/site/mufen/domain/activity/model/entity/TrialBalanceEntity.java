@@ -4,6 +4,7 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import site.mufen.domain.activity.model.valobj.GroupBuyActivityDiscountVO;
 
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
@@ -55,4 +56,9 @@ public class TrialBalanceEntity {
      * 是否可以参与
      */
     private Boolean isEnable;
+
+    /**
+     * 活动配置信息
+     */
+    private GroupBuyActivityDiscountVO groupBuyActivityDiscountVO;
 }
